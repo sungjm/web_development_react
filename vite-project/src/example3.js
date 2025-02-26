@@ -25,4 +25,3 @@ class Employee extends Person {
   }
 }
 
-console.log(Employee);
