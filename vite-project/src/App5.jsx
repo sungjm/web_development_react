@@ -167,3 +167,21 @@
 
 // 20250227
 // p, button 태그로 이루어진 Counter 컴포넌트를 작성하여 실행하는 것 수업할 예정
+
+import { useState } from "react";
+import './App.css'
+
+function Counter() {
+  const [ count, setCount] = useState(0);
+
+  return (
+    <>
+      <p>Current Count Number : {count}</p> 
+      <button onClick={() => setCount(precount => precount + 1)}>
+          증가
+        </button>
+    </>
+  );
+}
+/*Component 상태 조회는 중괄호{} */
+export default Counter;
