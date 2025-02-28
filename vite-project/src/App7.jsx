@@ -104,6 +104,7 @@
 // 이후 버튼을 눌러 count + 1 시킬 때마다(즉 count 상태 값을 바꿀 때마다) clean up Function이 먼저 콘솔에 찍히고, 이후에 Hello from useEffect가 출력됨을 확인할 수 있습니다.
 
 // 초기 렌더링이 끝나면 컴포넌트가 마운트 해체 되고, 정리함수가 호출됐습니다.
+import { useState } from "react";
 
 function Counter() {
       const [ count, setCount] = useState(0);
