@@ -12,12 +12,21 @@ function App() {
     event.preventDefault();
     alert(`안녕, ${name}!`);
   };
+  
   return (
-    <form onSubmit={handleSubmit}>
-      <input type='text' onChange={handleChange} value={name} />
-      <input type='submit' value='제출' />
-    </form>
-  )
+    <>
+      <form onSubmit={handleSubmit}>
+        <input 
+          type="text" 
+          value={name}
+          onChange={handleChange}
+        />
+
+        <input type="submit" value="제출"/>
+
+      </form>
+    </>
+  );
 }
 
 export default App
